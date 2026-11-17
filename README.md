@@ -8,6 +8,7 @@ firmware/boot.bin goes to 0x0 and firmware/game.bin to 0xe000, so the settings (
 place, touch) are kept; "erase" wipes the whole chip first. Installs go through this page only (no one-file
 image), so each one is counted.
 
-Data: RainViewer (radar), Open-Meteo (weather), Esri / OpenStreetMap (map), ThaiWater / HII (water levels).
+Data: RainViewer (radar), Open-Meteo (weather), ThaiWater / HII (water levels). Map: our own tiles
+(sfttech2000/cyd-weather-maps) made from © OpenStreetMap contributors (ODbL) and Natural Earth (public domain).
 Uses esptool-js 0.6.1 (Apache-2.0), vendored in mobile/esptool-js/ with its licence.
 Made by tee & claude.

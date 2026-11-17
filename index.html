@@ -84,11 +84,11 @@ footer { font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
 <body>
 <main>
   <header>
-    <img class="hero" src="img/00_cover.jpg" alt="จอ CYD Weather: แผนที่มืด อุณหภูมิ 30 องศา การ์ดอากาศ และพยากรณ์ 3 วัน" width="640" height="480">
+    <img class="hero" src="img/00_cover.jpg" alt="จอ CYD Weather: แผนที่มืด อุณหภูมิ 31 องศา การ์ดอากาศ และพยากรณ์ 3 วัน" width="640" height="480">
     <div class="kicker">CYD Weather · rain radar &amp; forecast</div>
     <h1>ติดตั้ง <span>CYD Weather</span> ผ่านเบราว์เซอร์</h1>
     <p class="muted">จอตั้งโต๊ะดูเมฆฝนเคลื่อนไหวบนแผนที่ พยากรณ์อากาศ 3 วัน และระดับน้ำแม่น้ำ/เขื่อนทั่วไทย บนบอร์ด CYD (ESP32-2432S028R จอเหลือง 2.8") ติดตั้งครั้งแรกหรืออัปเดต ไม่ต้องลงโปรแกรม ใช้ได้ทั้ง<b>คอมพิวเตอร์</b> (Chrome หรือ Edge) และ<b>มือถือ Android</b> (Chrome กับสาย OTG)</p>
-    <div class="tags"><span>เวอร์ชัน <b id="ver">…</b></span><span>ฟรี</span><span>ไม่ต้องสมัคร ไม่มีคีย์</span><span>ตั้ง Wi-Fi บนจอทัช</span><span>80 จังหวัด หรือพิกัดเอง</span><span>ทุกรุ่นจอ</span></div>
+    <div class="tags"><span>เวอร์ชัน <b id="ver">…</b></span><span>ฟรี</span><span>ไม่ต้องสมัคร ไม่มีคีย์</span><span>ตั้ง Wi-Fi บนจอทัช</span><span>80 จังหวัด หรือพิกัดเอง</span><span>แผนที่ไทยและประเทศรอบๆ</span><span>ทุกรุ่นจอ</span></div>
   </header>
 
   <div id="unsupported" class="box warn" hidden><b>เบราว์เซอร์นี้ใช้ไม่ได้</b><br>เปิดหน้านี้ด้วย Google Chrome หรือ Microsoft Edge บนคอม หรือ Chrome บนมือถือ Android · iPhone และ iPad ใช้ไม่ได้ (Apple ไม่เปิดให้เว็บใช้พอร์ต USB)</div>
@@ -140,15 +140,16 @@ footer { font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
     <h2>มีอะไรบ้าง</h2>
     <ul>
       <li><b>เรดาร์ฝนเคลื่อนไหว</b> 2 ชั่วโมงล่าสุดบนแผนที่มืด สีฟ้า = ฝนเบา ไล่ไปแดง/ม่วง = ฝนหนัก · ซูม 3 ระดับ ราว 95 / 190 / 380 กม.</li>
+      <li>แผนที่ครอบคลุมไทย พม่า ลาว กัมพูชา เวียดนาม มาเลเซีย · พิกัดนอกนั้นพื้นจะดำ แต่เมฆฝนยังขึ้น</li>
       <li><b>อากาศตอนนี้</b>: อุณหภูมิ รู้สึกเหมือน ปริมาณฝน ความชื้น โอกาสฝน ลม ความกดอากาศ ทัศนวิสัย · <b>พยากรณ์ 3 วัน</b></li>
       <li>การ์ดโปร่งแสง แตะแผนที่เพื่อซ่อน/แสดง ดูเมฆฝนเต็มจอ</li>
       <li><b>หน้า Water</b>: สถานีวัดระดับน้ำแม่น้ำและเขื่อนใหญ่ทั่วไทย จุดน้ำเงิน = น้ำมาก จุดแดงกระพริบ = ล้นตลิ่ง แตะจุดดูระดับเทียบตลิ่งและแนวโน้ม</li>
       <li>ตั้งค่าบนจอทั้งหมด: เลือกจังหวัด (80 แห่ง) หรือพิกัด เปลี่ยน Wi-Fi ปรับทัช กลับหัวจอ</li>
     </ul>
     <div class="shots">
-      <figure><img src="img/01_radar.jpg" alt="เมฆฝนสีฟ้าเขียวส้มเหนือกรุงเทพบนแผนที่มืด" loading="lazy"><figcaption>ซ่อนการ์ด ดูเมฆฝนเต็มจอ</figcaption></figure>
+      <figure><img src="img/01_radar.jpg" alt="เมฆฝนเหนือปทุมธานีบนแผนที่มืด" loading="lazy"><figcaption>ซ่อนการ์ด ดูเมฆฝนเต็มจอ</figcaption></figure>
       <figure><img src="img/02_water.jpg" alt="หน้า Water จุดสถานีวัดน้ำรอบกรุงเทพ" loading="lazy"><figcaption>หน้า Water: สถานีวัดน้ำ เขื่อน</figcaption></figure>
-      <figure><img src="img/03_station.jpg" alt="รายละเอียดสถานี Tha Chin 7 น้ำล้นตลิ่ง 0.14 เมตร" loading="lazy"><figcaption>แตะสถานี: น้ำเทียบตลิ่ง</figcaption></figure>
+      <figure><img src="img/03_station.jpg" alt="รายละเอียดสถานี T.15 น้ำล้นตลิ่ง 0.90 เมตร" loading="lazy"><figcaption>แตะสถานี: น้ำเทียบตลิ่ง</figcaption></figure>
       <figure><img src="img/04_place.jpg" alt="หน้าเลือกพื้นที่ แยกตามภาค" loading="lazy"><figcaption>เลือกจังหวัดบนจอ</figcaption></figure>
     </div>
   </section>
@@ -163,7 +164,7 @@ footer { font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
 
   <footer>
     <p>CYD Weather · by tee &amp; claude · แจกฟรี เจอบั๊กแจ้งได้พร้อมเลขเวอร์ชัน (หน้าตั้งค่า มุมซ้ายล่าง) และรุ่นบอร์ด</p>
-    <p>ข้อมูล: เรดาร์ฝน <a href="https://www.rainviewer.com/">RainViewer</a> · อากาศ <a href="https://open-meteo.com/">Open-Meteo</a> · แผนที่ Esri, OpenStreetMap · ระดับน้ำ <a href="https://www.thaiwater.net/">ThaiWater</a> (สสน.)</p>
+    <p>ข้อมูล: เรดาร์ฝน <a href="https://www.rainviewer.com/">RainViewer</a> · อากาศ <a href="https://open-meteo.com/">Open-Meteo</a> · แผนที่ © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> และ <a href="https://www.naturalearthdata.com/">Natural Earth</a> (เราวาดเอง) · ระดับน้ำ <a href="https://www.thaiwater.net/">ThaiWater</a> (สสน.)</p>
     <p>หน้านี้นับแค่จำนวนครั้งที่ติดตั้งสำเร็จ (+1) ไม่เก็บข้อมูลใดๆ ของคุณ · ใช้ esptool-js (Apache-2.0) ของ Espressif ดู <a href="mobile/esptool-js/LICENSE">LICENSE</a></p>
   </footer>
 </main>

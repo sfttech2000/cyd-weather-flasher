@@ -89,7 +89,7 @@ footer { font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
 <body>
 <main>
   <header>
-    <img class="hero" src="img/00_cover.jpg" alt="จอ CYD Weather: แผนที่มืด อุณหภูมิ 31 องศา การ์ดอากาศ และพยากรณ์ 3 วัน" width="640" height="480">
+    <img class="hero" src="img/00_cover.jpg" alt="จอ CYD Weather: แผนที่มืด อุณหภูมิ 34 องศา การ์ดอากาศ และพยากรณ์ 3 วัน" width="640" height="480">
     <div class="kicker">CYD Weather · rain radar &amp; forecast</div>
     <h1>ติดตั้ง <span>CYD Weather</span> ผ่านเบราว์เซอร์</h1>
     <p class="muted">จอตั้งโต๊ะดูเมฆฝนเคลื่อนไหวบนแผนที่ พยากรณ์อากาศ 3 วัน และระดับน้ำแม่น้ำ/เขื่อนทั่วไทย บนบอร์ด CYD (ESP32-2432S028R จอเหลือง 2.8") ติดตั้งครั้งแรกหรืออัปเดต ไม่ต้องลงโปรแกรม ใช้ได้ทั้ง<b>คอมพิวเตอร์</b> (Chrome หรือ Edge) และ<b>มือถือ Android</b> (Chrome กับสาย OTG)</p>
@@ -156,12 +156,14 @@ footer { font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
       <li><b>อากาศตอนนี้</b>: อุณหภูมิ รู้สึกเหมือน ปริมาณฝน ความชื้น โอกาสฝน ลม ความกดอากาศ ทัศนวิสัย · <b>พยากรณ์ 3 วัน</b></li>
       <li>การ์ดโปร่งแสง แตะแผนที่เพื่อซ่อน/แสดง ดูเมฆฝนเต็มจอ</li>
       <li><b>หน้า Water</b>: สถานีวัดระดับน้ำแม่น้ำและเขื่อนใหญ่ทั่วไทย จุดน้ำเงิน = น้ำมาก จุดแดงกระพริบ = ล้นตลิ่ง แตะจุดดูระดับเทียบตลิ่งและแนวโน้ม</li>
-      <li>ตั้งค่าบนจอทั้งหมด: เลือกจังหวัด (80 แห่ง) หรือพิกัด เปลี่ยน Wi-Fi ปรับทัช กลับหัวจอ</li>
+      <li><b>ดวงจันทร์ + เวลาตกปลา</b>: ข้างขึ้นข้างแรม และช่วงปลากินเหยื่อ Major / Minor ของวันนี้ คำนวณในบอร์ดเอง</li>
+      <li>ตั้งค่าบนจอทั้งหมด: เลือกจังหวัด (80 แห่ง) หรือพิกัด เปลี่ยน Wi-Fi ปรับทัช กลับหัวจอ ความสว่างจอ ความเร็วภาพฝน</li>
     </ul>
     <div class="shots">
-      <figure><img src="img/01_radar.jpg" alt="เมฆฝนเหนือปทุมธานีบนแผนที่มืด" loading="lazy"><figcaption>ซ่อนการ์ด ดูเมฆฝนเต็มจอ</figcaption></figure>
+      <figure><img src="img/01_radar.jpg" alt="เมฆฝนบนแผนที่มืด ภาคกลาง" loading="lazy"><figcaption>ซ่อนการ์ด ดูเมฆฝนเต็มจอ</figcaption></figure>
+      <figure><img src="img/05_moon.jpg" alt="การ์ดดวงจันทร์ ข้างขึ้น 67% และเวลาตกปลา Major Minor" loading="lazy"><figcaption>ปุ่ม Fishing: ดวงจันทร์ + เวลาตกปลา</figcaption></figure>
       <figure><img src="img/02_water.jpg" alt="หน้า Water จุดสถานีวัดน้ำรอบกรุงเทพ" loading="lazy"><figcaption>หน้า Water: สถานีวัดน้ำ เขื่อน</figcaption></figure>
-      <figure><img src="img/03_station.jpg" alt="รายละเอียดสถานี T.15 น้ำล้นตลิ่ง 0.90 เมตร" loading="lazy"><figcaption>แตะสถานี: น้ำเทียบตลิ่ง</figcaption></figure>
+      <figure><img src="img/03_station.jpg" alt="รายละเอียดสถานีท่าจีน น้ำล้นตลิ่ง 0.07 เมตร" loading="lazy"><figcaption>แตะสถานี: น้ำเทียบตลิ่ง</figcaption></figure>
       <figure><img src="img/04_place.jpg" alt="หน้าเลือกพื้นที่ แยกตามภาค" loading="lazy"><figcaption>เลือกจังหวัดบนจอ</figcaption></figure>
     </div>
   </section>
